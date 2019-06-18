@@ -7,11 +7,11 @@ IOS 哔哩哔哩 解除区域限制
 --|--
 |![IMG_4449.PNG](https://upload-images.jianshu.io/upload_images/4066843-a12927dad3fbb955.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|![IMG_4451.PNG](https://upload-images.jianshu.io/upload_images/4066843-4467d6cc45dc188e.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|
 
-完整演示：(图片(8M) 较大可能需要时间加载)  
-![演示.gif](https://upload-images.jianshu.io/upload_images/4066843-12954adf03f88009.gif?imageMogr2/auto-orient/strip)
+完整演示：(图片(8M) 较大可能需要时间加载,若无法查看前往简书)  
+![演示.gif](./演示.gif)
 
 插件功能：
-> * 显示地区限制的番剧（目前只有番剧-时刻表完成）
+>* 显示地区限制的番剧（目前只有番剧-时刻表完成）
 >* 地区限制番剧下载 （需原番剧支持下载，版权限制无法下载）
 >* 地区限制番剧发弹幕或评论 (需要使用代理或VPN)
 
@@ -27,10 +27,10 @@ IOS 哔哩哔哩 解除区域限制
 1.源码学习    
     **下载本项目，修改项目BundleId及签名信息，选择真机设备运行即可**[源码地址GitHub](https://github.com/DKWechatHelper/DKWechatHelper)  
 2.开发者：  
-    下载以下ipa后重签名应用：[前往GitHub下载](https://github.com/DKJone/bilibili_Unlock)  
+    下载以下ipa后重签名应用：[未签名版](链接:https://pan.baidu.com/s/1Fx_Haljm-PWirWyXsdSCtA)密码:`ar38`  
     注：推荐使用[ios-app-signer](https://github.com/DanTheMan827/ios-app-signer)签名，使用方法自行百度     
 3.普通用户：    
-    前往以下地址下载：[前往GitHub下载](https://github.com/DKJone/bilibili_Unlock)  
+    前往以下地址下载：[未签名版](链接:https://pan.baidu.com/s/1Fx_Haljm-PWirWyXsdSCtA)密码:`ar38`  
     下载后使用 [Cydia Impactor](http://www.cydiaimpactor.com/)安装   
 
 ### 使用方法：

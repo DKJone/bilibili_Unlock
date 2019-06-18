@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11F6432622B3869F008FA5FA /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11F6432522B3869F008FA5FA /* MDConfig.plist */; };
+		11F6433022B3869F008FA5FA /* libbilibili_UnlockDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11F6432F22B3869F008FA5FA /* libbilibili_UnlockDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		11F6433522B3869F008FA5FA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F6433422B3869F008FA5FA /* JavaScriptCore.framework */; };
+		11F6433722B3869F008FA5FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F6433622B3869F008FA5FA /* Foundation.framework */; };
+		11F6433922B3869F008FA5FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F6433822B3869F008FA5FA /* UIKit.framework */; };
+		11F6433E22B386A0008FA5FA /* bilibili_UnlockDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 11F6433D22B386A0008FA5FA /* bilibili_UnlockDylib.mm */; };
+		11F6434122B386A0008FA5FA /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11F6434022B386A0008FA5FA /* MDConfigManager.h */; };
+		11F6434322B386A0008FA5FA /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F6434222B386A0008FA5FA /* MDConfigManager.m */; };
+		11F6434522B386A0008FA5FA /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11F6434422B386A0008FA5FA /* MDCycriptManager.h */; };
+		11F6434722B386A0008FA5FA /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F6434622B386A0008FA5FA /* MDCycriptManager.m */; };
+		11F6434922B386A0008FA5FA /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 11F6434822B386A0008FA5FA /* MDMethodTrace.h */; };
+		11F6434B22B386A0008FA5FA /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F6434A22B386A0008FA5FA /* MDMethodTrace.m */; };
+		11F6434E22B386A0008FA5FA /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 11F6434D22B386A0008FA5FA /* a1a2-selectortramps-arm.s */; };
+		11F6435022B386A0008FA5FA /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 11F6434F22B386A0008FA5FA /* a1a2-selectortramps-arm64.s */; };
+		11F6435222B386A0008FA5FA /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 11F6435122B386A0008FA5FA /* a1a2-selectortramps-i386.s */; };
+		11F6435422B386A0008FA5FA /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 11F6435322B386A0008FA5FA /* a1a2-selectortramps-x86_64.s */; };
+		11F6435622B386A0008FA5FA /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 11F6435522B386A0008FA5FA /* a2a3-selectortramps-arm.s */; };
+		11F6435822B386A0008FA5FA /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 11F6435722B386A0008FA5FA /* a2a3-selectortramps-i386.s */; };
+		11F6435A22B386A0008FA5FA /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 11F6435922B386A0008FA5FA /* a2a3-selectortramps-x86_64.s */; };
+		11F6435C22B386A0008FA5FA /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 11F6435B22B386A0008FA5FA /* OCMethodTrace.h */; };
+		11F6435E22B386A0008FA5FA /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F6435D22B386A0008FA5FA /* OCMethodTrace.m */; };
+		11F6436022B386A0008FA5FA /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 11F6435F22B386A0008FA5FA /* OCSelectorTrampolines.h */; };
+		11F6436222B386A0008FA5FA /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 11F6436122B386A0008FA5FA /* OCSelectorTrampolines.mm */; };
+		11F6436622B386A0008FA5FA /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 11F6436522B386A0008FA5FA /* LLDBTools.h */; };
+		11F6436822B386A0008FA5FA /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 11F6436722B386A0008FA5FA /* LLDBTools.mm */; };
+		11F6436D22B386A0008FA5FA /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F6436C22B386A0008FA5FA /* AntiAntiDebug.m */; };
+		11F6437022B386A0008FA5FA /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 11F6436F22B386A0008FA5FA /* fishhook.c */; };
+		11F6437222B386A0008FA5FA /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 11F6437122B386A0008FA5FA /* fishhook.h */; };
+		11F6437422B386A0008FA5FA /* bilibili_UnlockDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 11F6437322B386A0008FA5FA /* bilibili_UnlockDylib.h */; };
+		11F6437622B386A0008FA5FA /* bilibili_UnlockDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F6437522B386A0008FA5FA /* bilibili_UnlockDylib.m */; };
+		11F6438122B3AFAF008FA5FA /* DKHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 11F6437F22B3AFAF008FA5FA /* DKHelper.h */; };
+		11F6438222B3AFAF008FA5FA /* DKHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F6438022B3AFAF008FA5FA /* DKHelper.m */; };
+		E023F83F775772A7D01B420A /* Pods_bilibili_Unlock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199AAC4CC94FEF52D6D627F4 /* Pods_bilibili_Unlock.framework */; };
+		F6D76BA7616843086B3FF31E /* Pods_bilibili_UnlockDylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82BE4AA650625BE6BF8398C /* Pods_bilibili_UnlockDylib.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11F6433122B3869F008FA5FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11F6431322B3869F008FA5FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11F6432E22B3869F008FA5FA;
+			remoteInfo = bilibili_UnlockDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11F6431B22B3869F008FA5FA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11F6433022B3869F008FA5FA /* libbilibili_UnlockDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		11F6431E22B3869F008FA5FA /* bilibili_Unlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bilibili_Unlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11F6432122B3869F008FA5FA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		11F6432322B3869F008FA5FA /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		11F6432522B3869F008FA5FA /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		11F6432822B3869F008FA5FA /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		11F6432922B3869F008FA5FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11F6432F22B3869F008FA5FA /* libbilibili_UnlockDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libbilibili_UnlockDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		11F6433422B3869F008FA5FA /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		11F6433622B3869F008FA5FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		11F6433822B3869F008FA5FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		11F6433C22B3869F008FA5FA /* bilibili_UnlockDylib.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = bilibili_UnlockDylib.xm; path = Logos/bilibili_UnlockDylib.xm; sourceTree = "<group>"; };
+		11F6433D22B386A0008FA5FA /* bilibili_UnlockDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = bilibili_UnlockDylib.mm; path = Logos/bilibili_UnlockDylib.mm; sourceTree = "<group>"; };
+		11F6434022B386A0008FA5FA /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		11F6434222B386A0008FA5FA /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		11F6434422B386A0008FA5FA /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		11F6434622B386A0008FA5FA /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		11F6434822B386A0008FA5FA /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		11F6434A22B386A0008FA5FA /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		11F6434D22B386A0008FA5FA /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm.s"; path = "Trace/a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		11F6434F22B386A0008FA5FA /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm64.s"; path = "Trace/a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		11F6435122B386A0008FA5FA /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-i386.s"; path = "Trace/a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		11F6435322B386A0008FA5FA /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-x86_64.s"; path = "Trace/a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		11F6435522B386A0008FA5FA /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-arm.s"; path = "Trace/a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		11F6435722B386A0008FA5FA /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-i386.s"; path = "Trace/a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		11F6435922B386A0008FA5FA /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-x86_64.s"; path = "Trace/a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		11F6435B22B386A0008FA5FA /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMethodTrace.h; path = Trace/OCMethodTrace.h; sourceTree = "<group>"; };
+		11F6435D22B386A0008FA5FA /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCMethodTrace.m; path = Trace/OCMethodTrace.m; sourceTree = "<group>"; };
+		11F6435F22B386A0008FA5FA /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCSelectorTrampolines.h; path = Trace/OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		11F6436122B386A0008FA5FA /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OCSelectorTrampolines.mm; path = Trace/OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		11F6436322B386A0008FA5FA /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
+		11F6436522B386A0008FA5FA /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		11F6436722B386A0008FA5FA /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		11F6436A22B386A0008FA5FA /* bilibili_UnlockDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bilibili_UnlockDylib-Prefix.pch"; sourceTree = "<group>"; };
+		11F6436C22B386A0008FA5FA /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		11F6436F22B386A0008FA5FA /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		11F6437122B386A0008FA5FA /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		11F6437322B386A0008FA5FA /* bilibili_UnlockDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bilibili_UnlockDylib.h; sourceTree = "<group>"; };
+		11F6437522B386A0008FA5FA /* bilibili_UnlockDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bilibili_UnlockDylib.m; sourceTree = "<group>"; };
+		11F6437F22B3AFAF008FA5FA /* DKHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DKHelper.h; path = Logos/DKHelper.h; sourceTree = "<group>"; };
+		11F6438022B3AFAF008FA5FA /* DKHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DKHelper.m; path = Logos/DKHelper.m; sourceTree = "<group>"; };
+		199AAC4CC94FEF52D6D627F4 /* Pods_bilibili_Unlock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bilibili_Unlock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E85BBA165C3952073C5498B /* Pods-bilibili_Unlock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili_Unlock.debug.xcconfig"; path = "Target Support Files/Pods-bilibili_Unlock/Pods-bilibili_Unlock.debug.xcconfig"; sourceTree = "<group>"; };
+		89A894158C2EE4DBB98A0A79 /* Pods-bilibili_Unlock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili_Unlock.release.xcconfig"; path = "Target Support Files/Pods-bilibili_Unlock/Pods-bilibili_Unlock.release.xcconfig"; sourceTree = "<group>"; };
+		A82BE4AA650625BE6BF8398C /* Pods_bilibili_UnlockDylib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bilibili_UnlockDylib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D46E5061F186F2A182AACF /* Pods-bilibili_UnlockDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili_UnlockDylib.release.xcconfig"; path = "Target Support Files/Pods-bilibili_UnlockDylib/Pods-bilibili_UnlockDylib.release.xcconfig"; sourceTree = "<group>"; };
+		EAA0B4634E0C40DBD6FDD548 /* Pods-bilibili_UnlockDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili_UnlockDylib.debug.xcconfig"; path = "Target Support Files/Pods-bilibili_UnlockDylib/Pods-bilibili_UnlockDylib.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11F6431822B3869F008FA5FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E023F83F775772A7D01B420A /* Pods_bilibili_Unlock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11F6432C22B3869F008FA5FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F6433522B3869F008FA5FA /* JavaScriptCore.framework in Frameworks */,
+				11F6433922B3869F008FA5FA /* UIKit.framework in Frameworks */,
+				11F6433722B3869F008FA5FA /* Foundation.framework in Frameworks */,
+				F6D76BA7616843086B3FF31E /* Pods_bilibili_UnlockDylib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11F6431222B3869F008FA5FA = {
+			isa = PBXGroup;
+			children = (
+				11F6432022B3869F008FA5FA /* bilibili_Unlock */,
+				11F6433A22B3869F008FA5FA /* bilibili_UnlockDylib */,
+				11F6433322B3869F008FA5FA /* Frameworks */,
+				11F6431F22B3869F008FA5FA /* Products */,
+				5B7FEE215A36891B1283B207 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		11F6431F22B3869F008FA5FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11F6431E22B3869F008FA5FA /* bilibili_Unlock.app */,
+				11F6432F22B3869F008FA5FA /* libbilibili_UnlockDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11F6432022B3869F008FA5FA /* bilibili_Unlock */ = {
+			isa = PBXGroup;
+			children = (
+				11F6432122B3869F008FA5FA /* icon.png */,
+				11F6432922B3869F008FA5FA /* Info.plist */,
+				11F6432222B3869F008FA5FA /* Scripts */,
+				11F6432422B3869F008FA5FA /* Config */,
+				11F6432722B3869F008FA5FA /* TargetApp */,
+			);
+			path = bilibili_Unlock;
+			sourceTree = "<group>";
+		};
+		11F6432222B3869F008FA5FA /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				11F6432322B3869F008FA5FA /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		11F6432422B3869F008FA5FA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				11F6432522B3869F008FA5FA /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		11F6432722B3869F008FA5FA /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				11F6432822B3869F008FA5FA /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		11F6433322B3869F008FA5FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11F6433422B3869F008FA5FA /* JavaScriptCore.framework */,
+				11F6433622B3869F008FA5FA /* Foundation.framework */,
+				11F6433822B3869F008FA5FA /* UIKit.framework */,
+				199AAC4CC94FEF52D6D627F4 /* Pods_bilibili_Unlock.framework */,
+				A82BE4AA650625BE6BF8398C /* Pods_bilibili_UnlockDylib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11F6433A22B3869F008FA5FA /* bilibili_UnlockDylib */ = {
+			isa = PBXGroup;
+			children = (
+				11F6437322B386A0008FA5FA /* bilibili_UnlockDylib.h */,
+				11F6437522B386A0008FA5FA /* bilibili_UnlockDylib.m */,
+				11F6433B22B3869F008FA5FA /* Logos */,
+				11F6433F22B386A0008FA5FA /* Config */,
+				11F6434C22B386A0008FA5FA /* Trace */,
+				11F6436422B386A0008FA5FA /* Tools */,
+				11F6436B22B386A0008FA5FA /* AntiAntiDebug */,
+				11F6436E22B386A0008FA5FA /* fishhook */,
+				11F6436922B386A0008FA5FA /* Supporting Files */,
+			);
+			path = bilibili_UnlockDylib;
+			sourceTree = "<group>";
+		};
+		11F6433B22B3869F008FA5FA /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				11F6433C22B3869F008FA5FA /* bilibili_UnlockDylib.xm */,
+				11F6433D22B386A0008FA5FA /* bilibili_UnlockDylib.mm */,
+				11F6437F22B3AFAF008FA5FA /* DKHelper.h */,
+				11F6438022B3AFAF008FA5FA /* DKHelper.m */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		11F6433F22B386A0008FA5FA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				11F6434022B386A0008FA5FA /* MDConfigManager.h */,
+				11F6434222B386A0008FA5FA /* MDConfigManager.m */,
+				11F6434422B386A0008FA5FA /* MDCycriptManager.h */,
+				11F6434622B386A0008FA5FA /* MDCycriptManager.m */,
+				11F6434822B386A0008FA5FA /* MDMethodTrace.h */,
+				11F6434A22B386A0008FA5FA /* MDMethodTrace.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		11F6434C22B386A0008FA5FA /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				11F6434D22B386A0008FA5FA /* a1a2-selectortramps-arm.s */,
+				11F6434F22B386A0008FA5FA /* a1a2-selectortramps-arm64.s */,
+				11F6435122B386A0008FA5FA /* a1a2-selectortramps-i386.s */,
+				11F6435322B386A0008FA5FA /* a1a2-selectortramps-x86_64.s */,
+				11F6435522B386A0008FA5FA /* a2a3-selectortramps-arm.s */,
+				11F6435722B386A0008FA5FA /* a2a3-selectortramps-i386.s */,
+				11F6435922B386A0008FA5FA /* a2a3-selectortramps-x86_64.s */,
+				11F6435B22B386A0008FA5FA /* OCMethodTrace.h */,
+				11F6435D22B386A0008FA5FA /* OCMethodTrace.m */,
+				11F6435F22B386A0008FA5FA /* OCSelectorTrampolines.h */,
+				11F6436122B386A0008FA5FA /* OCSelectorTrampolines.mm */,
+				11F6436322B386A0008FA5FA /* selectortramps.mac */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		11F6436422B386A0008FA5FA /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				11F6436522B386A0008FA5FA /* LLDBTools.h */,
+				11F6436722B386A0008FA5FA /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		11F6436922B386A0008FA5FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11F6436A22B386A0008FA5FA /* bilibili_UnlockDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11F6436B22B386A0008FA5FA /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				11F6436C22B386A0008FA5FA /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		11F6436E22B386A0008FA5FA /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				11F6436F22B386A0008FA5FA /* fishhook.c */,
+				11F6437122B386A0008FA5FA /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		5B7FEE215A36891B1283B207 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E85BBA165C3952073C5498B /* Pods-bilibili_Unlock.debug.xcconfig */,
+				89A894158C2EE4DBB98A0A79 /* Pods-bilibili_Unlock.release.xcconfig */,
+				EAA0B4634E0C40DBD6FDD548 /* Pods-bilibili_UnlockDylib.debug.xcconfig */,
+				D8D46E5061F186F2A182AACF /* Pods-bilibili_UnlockDylib.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		11F6432D22B3869F008FA5FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F6434522B386A0008FA5FA /* MDCycriptManager.h in Headers */,
+				11F6438122B3AFAF008FA5FA /* DKHelper.h in Headers */,
+				11F6434922B386A0008FA5FA /* MDMethodTrace.h in Headers */,
+				11F6437222B386A0008FA5FA /* fishhook.h in Headers */,
+				11F6437422B386A0008FA5FA /* bilibili_UnlockDylib.h in Headers */,
+				11F6436622B386A0008FA5FA /* LLDBTools.h in Headers */,
+				11F6434122B386A0008FA5FA /* MDConfigManager.h in Headers */,
+				11F6436022B386A0008FA5FA /* OCSelectorTrampolines.h in Headers */,
+				11F6435C22B386A0008FA5FA /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		11F6431D22B3869F008FA5FA /* bilibili_Unlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11F6437C22B386A0008FA5FA /* Build configuration list for PBXNativeTarget "bilibili_Unlock" */;
+			buildPhases = (
+				E0C6426E6185758189436A75 /* [CP] Check Pods Manifest.lock */,
+				11F6431722B3869F008FA5FA /* Sources */,
+				11F6431822B3869F008FA5FA /* Frameworks */,
+				11F6431922B3869F008FA5FA /* ShellScript */,
+				11F6431A22B3869F008FA5FA /* Resources */,
+				11F6431B22B3869F008FA5FA /* CopyFiles */,
+				11F6431C22B3869F008FA5FA /* ShellScript */,
+				7D007A329AC634C92A4032C4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11F6433222B3869F008FA5FA /* PBXTargetDependency */,
+			);
+			name = bilibili_Unlock;
+			productName = bilibili_Unlock;
+			productReference = 11F6431E22B3869F008FA5FA /* bilibili_Unlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11F6432E22B3869F008FA5FA /* bilibili_UnlockDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11F6437922B386A0008FA5FA /* Build configuration list for PBXNativeTarget "bilibili_UnlockDylib" */;
+			buildPhases = (
+				15408A075C4493E7AEDC214B /* [CP] Check Pods Manifest.lock */,
+				11F6432A22B3869F008FA5FA /* ShellScript */,
+				11F6432B22B3869F008FA5FA /* Sources */,
+				11F6432C22B3869F008FA5FA /* Frameworks */,
+				11F6432D22B3869F008FA5FA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bilibili_UnlockDylib;
+			productName = bilibili_UnlockDylib;
+			productReference = 11F6432F22B3869F008FA5FA /* libbilibili_UnlockDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11F6431322B3869F008FA5FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = DKJone;
+				TargetAttributes = {
+					11F6431D22B3869F008FA5FA = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					11F6432E22B3869F008FA5FA = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 11F6431622B3869F008FA5FA /* Build configuration list for PBXProject "bilibili_Unlock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 11F6431222B3869F008FA5FA;
+			productRefGroup = 11F6431F22B3869F008FA5FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11F6431D22B3869F008FA5FA /* bilibili_Unlock */,
+				11F6432E22B3869F008FA5FA /* bilibili_UnlockDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11F6431A22B3869F008FA5FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F6432622B3869F008FA5FA /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11F6431922B3869F008FA5FA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		11F6431C22B3869F008FA5FA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		11F6432A22B3869F008FA5FA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		15408A075C4493E7AEDC214B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bilibili_UnlockDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D007A329AC634C92A4032C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bilibili_Unlock/Pods-bilibili_Unlock-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bilibili_Unlock/Pods-bilibili_Unlock-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bilibili_Unlock/Pods-bilibili_Unlock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0C6426E6185758189436A75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bilibili_Unlock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11F6431722B3869F008FA5FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11F6432B22B3869F008FA5FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F6434722B386A0008FA5FA /* MDCycriptManager.m in Sources */,
+				11F6435022B386A0008FA5FA /* a1a2-selectortramps-arm64.s in Sources */,
+				11F6434E22B386A0008FA5FA /* a1a2-selectortramps-arm.s in Sources */,
+				11F6435422B386A0008FA5FA /* a1a2-selectortramps-x86_64.s in Sources */,
+				11F6435E22B386A0008FA5FA /* OCMethodTrace.m in Sources */,
+				11F6434322B386A0008FA5FA /* MDConfigManager.m in Sources */,
+				11F6437022B386A0008FA5FA /* fishhook.c in Sources */,
+				11F6436D22B386A0008FA5FA /* AntiAntiDebug.m in Sources */,
+				11F6436222B386A0008FA5FA /* OCSelectorTrampolines.mm in Sources */,
+				11F6435222B386A0008FA5FA /* a1a2-selectortramps-i386.s in Sources */,
+				11F6435822B386A0008FA5FA /* a2a3-selectortramps-i386.s in Sources */,
+				11F6435622B386A0008FA5FA /* a2a3-selectortramps-arm.s in Sources */,
+				11F6433E22B386A0008FA5FA /* bilibili_UnlockDylib.mm in Sources */,
+				11F6436822B386A0008FA5FA /* LLDBTools.mm in Sources */,
+				11F6438222B3AFAF008FA5FA /* DKHelper.m in Sources */,
+				11F6435A22B386A0008FA5FA /* a2a3-selectortramps-x86_64.s in Sources */,
+				11F6437622B386A0008FA5FA /* bilibili_UnlockDylib.m in Sources */,
+				11F6434B22B386A0008FA5FA /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11F6433222B3869F008FA5FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11F6432E22B3869F008FA5FA /* bilibili_UnlockDylib */;
+			targetProxy = 11F6433122B3869F008FA5FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11F6437722B386A0008FA5FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		11F6437822B386A0008FA5FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11F6437A22B386A0008FA5FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAA0B4634E0C40DBD6FDD548 /* Pods-bilibili_UnlockDylib.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NL54V6A3P5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bilibili_UnlockDylib/bilibili_UnlockDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libbilibili_UnlockDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"bilibili_UnlockDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		11F6437B22B386A0008FA5FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8D46E5061F186F2A182AACF /* Pods-bilibili_UnlockDylib.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = NL54V6A3P5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bilibili_UnlockDylib/bilibili_UnlockDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libbilibili_UnlockDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"bilibili_UnlockDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11F6437D22B386A0008FA5FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E85BBA165C3952073C5498B /* Pods-bilibili_Unlock.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NL54V6A3P5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = bilibili_Unlock/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = sinoroad.com.bilianime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11F6437E22B386A0008FA5FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A894158C2EE4DBB98A0A79 /* Pods-bilibili_Unlock.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NL54V6A3P5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = bilibili_Unlock/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = sinoroad.com.bilianime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11F6431622B3869F008FA5FA /* Build configuration list for PBXProject "bilibili_Unlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F6437722B386A0008FA5FA /* Debug */,
+				11F6437822B386A0008FA5FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11F6437922B386A0008FA5FA /* Build configuration list for PBXNativeTarget "bilibili_UnlockDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F6437A22B386A0008FA5FA /* Debug */,
+				11F6437B22B386A0008FA5FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11F6437C22B386A0008FA5FA /* Build configuration list for PBXNativeTarget "bilibili_Unlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F6437D22B386A0008FA5FA /* Debug */,
+				11F6437E22B386A0008FA5FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11F6431322B3869F008FA5FA /* Project object */;
+}

@@ -1,0 +1,13 @@
+
+_
+obj
+*.deb
+.theos/
+.DS_Store
+*.ipa
+bilibili_Unlock/TargetApp/
+bilibili_Unlock/tmp/
+bilibili_Unlock/LatestBuild
+bilibili_Unlock/bili-universal_Headers
+bilibili_Unlock/TargetApp 
+
