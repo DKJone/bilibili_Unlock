@@ -16,9 +16,10 @@ IOS 哔哩哔哩 解除区域限制
 >* 地区限制番剧发弹幕或评论 (需要使用代理或VPN)
 
 特别提醒：
-**1. 下载或观看港澳台地区视频需要代理或VPN到港澳台地区，本插件只用于显示对应地区番剧**❗️❗️❗️
-**2. 地区代码：中国大陆：`1,-2`,港澳台+大会员：`1,2`** 
+**1. 下载或观看港澳台地区视频需要代理或VPN到港澳台地区，本插件只用于显示对应地区番剧**❗️❗️❗️  
+**2. 地区代码：中国大陆：`1,-2`,港澳台+大会员：`1,2`**   
 **3. 经过测试代理至香港即可收看和下载港澳台和仅限台湾番剧(下载需要番剧支持，版权限制这无法下载，例如：自由之翼[巨人]台湾地区可以下载，其他版权番剧这无法下载)**
+
 
 项目地址：[GitHub:bilibili_Unlock](https://github.com/DKJone/bilibili_Unlock)
 
@@ -27,10 +28,10 @@ IOS 哔哩哔哩 解除区域限制
 1.源码学习    
     **下载本项目，修改项目BundleId及签名信息，选择真机设备运行即可**[源码地址GitHub](https://github.com/DKWechatHelper/DKWechatHelper)  
 2.开发者：  
-    下载以下ipa后重签名应用：[未签名版](链接:https://pan.baidu.com/s/1Fx_Haljm-PWirWyXsdSCtA)密码:`ar38`  
+    下载以下ipa后重签名应用：[未签名版](https://pan.baidu.com/s/1Fx_Haljm-PWirWyXsdSCtA)密码:`ar38`  
     注：推荐使用[ios-app-signer](https://github.com/DanTheMan827/ios-app-signer)签名，使用方法自行百度     
 3.普通用户：    
-    前往以下地址下载：[未签名版](链接:https://pan.baidu.com/s/1Fx_Haljm-PWirWyXsdSCtA)密码:`ar38`  
+    前往以下地址下载：[未签名版](https://pan.baidu.com/s/1Fx_Haljm-PWirWyXsdSCtA)密码:`ar38`  
     下载后使用 [Cydia Impactor](http://www.cydiaimpactor.com/)安装   
 
 ### 使用方法：
